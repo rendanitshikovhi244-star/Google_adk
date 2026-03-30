@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from google.adk.agents import Agent
-
+# The HF_MODEL environment variable should be set to the name of the Hugging Face model you want to use, e.g. "gpt2" or "distilgpt2".
 hf_model = os.getenv("HF_MODEL")
 
 root_agent = Agent(
